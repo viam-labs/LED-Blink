@@ -63,7 +63,11 @@ git clone https://github.com/viamrobotics/LED-Blink.git
 ```
 
 4) Update the payload and address information in `blink.py`. You can your information from the **`Connect`** tab of the [Viam App](https://app.viam.com/robots).
+5) Run your code!
 
+```bash
+python3 blink.py
+```
 
 ## Contributing
 
