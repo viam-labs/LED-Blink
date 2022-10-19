@@ -44,22 +44,21 @@ You will need the following hardware, tools, and software to complete this proje
 
 -   [Pip](https://pip.pypa.io/en/stable/#)
 
--   [Viam Server](https://github.com/viamrobotics/rdk/tree/0c550c246739b87b4d5a9e8d96d2b6fdb3948e2b)
+-   [Viam Server](https://www.viam.com/)
 
 -   [Viam Python SDK](https://python.viam.dev/)
 
--   Install [Visual Studio Code](https://code.visualstudio.com/) or [Visual Studio Code Insiders](https://code.visualstudio.com/insiders/) on your development machine (not your Raspberry Pi).
 
 ## Installation
 
-1) [Install Viam Server on your Raspberry Pi](https://docs.viam.com/getting-started/installation/#installing-viam-server).
+1) [Install Viam Server on your Raspberry Pi](https://docs.viam.com/getting-started/installation/).
 
 2) [Install the Viam Python SDK](https://python.viam.dev/) on your development machine.
 
 3) Clone this repo onto your development machine:
 
 ```bash
-git clone https://github.com/viamrobotics/LED-Blink.git
+git clone git@github.com:viam-labs/LED-Blink.git
 ```
 
 4) Update the payload and address information in `blink.py`. You can your information from the **`Connect`** tab of the [Viam App](https://app.viam.com/robots).
