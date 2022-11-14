@@ -46,6 +46,8 @@ You will need the following hardware, tools, and software to complete this proje
 git clone git@github.com:viam-labs/LED-Blink.git
 ```
 
+3) Set up your Raspberry Pi and LED. See [How to Make an LED Blink with a Raspberry Pi and the Viam SDK](https://docs.viam.com/tutorials/make-an-led-blink-with-a-raspberry-pi-and-sdk/) for details. 
+
 ### Python
 
 1) [Install Viam Python SDK on your computer](https://python.viam.dev/).
@@ -64,10 +66,15 @@ python3 python/blink.py
 
 2) Update the payload and address information in `blink.go`. You can your information from the **`CONNECT`** tab of the [Viam app](https://app.viam.com/robots).
 
-3) Run your code!
+3) Change directory to the go directory.
+```bash
+cd go
+```
+
+4) Run your code!
 
 ```bash
-go run go/blink.go
+go run blink.go
 ```
 
 ### Contributing TLDR
