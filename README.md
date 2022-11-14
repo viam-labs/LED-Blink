@@ -50,7 +50,7 @@ git clone git@github.com:viam-labs/LED-Blink.git
 
 1) [Install Viam Python SDK on your computer](https://python.viam.dev/).
 
-2) Update the payload and address information in `blink.py`. You can your information from the **`Connect`** tab of the [Viam App](https://app.viam.com/robots).
+2) Update the payload and address information in `blink.py`. You can your information from the **`CONNECT`** tab of the [Viam App](https://app.viam.com/robots).
 
 3) Run your code!
 
@@ -62,7 +62,7 @@ python3 python/blink.py
 
 1) [Install Viam Go SDK on your computer](https://pkg.go.dev/go.viam.com/rdk/robot/client#section-readme).
 
-2) Update the payload and address information in `blink.go`. You can your information from the **`Connect`** tab of the [Viam App](https://app.viam.com/robots).
+2) Update the payload and address information in `blink.go`. You can your information from the **`CONNECT`** tab of the [Viam app](https://app.viam.com/robots).
 
 3) Run your code!
 
