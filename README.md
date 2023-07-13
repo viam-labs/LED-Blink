@@ -1,6 +1,8 @@
 # LED-Blink
 
-In this post, you will be introduced to the basics of programming hardware using the Viam SDK by making an LED blink. This will allow you to write Python or Golang code to make an LED connected to the GPIO of a Raspberry Pi blink. This tutorial is a good introduction to Python programming, and developing code for hardware like robots and IoT devices.
+This project introduces the basics of programming hardware using the Viam SDK by making an LED blink. This will allow you to write Python or Golang code to make an LED connected to the GPIO of a Raspberry Pi blink. This tutorial is a good introduction to Python programming, and developing code for hardware like robots and IoT devices.
+
+Check out the [full tutorial on the Viam documentation site](https://docs.viam.com/tutorials/get-started/make-an-led-blink-with-the-viam-app/).
 
 ![A GIF of the completed project showing a blinking blue LED connected to a Raspberry Pi with jumper cables.](https://user-images.githubusercontent.com/4650739/190014115-78f89892-ee67-4a19-846a-33c86e8e6272.gif)
 
