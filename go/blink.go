@@ -1,18 +1,3 @@
-
-func main() {
-	logger := golog.NewDevelopmentLogger("client")
-	robot, err := client.New(
-		context.Background(),
-		"ADDRESS FROM THE VIAM APP",
-		logger,
-		client.WithDialOptions(rpc.WithEntityCredentials(
-			// Replace "<API-KEY-ID>" (including brackets) with your machine's API key ID
-			"<API-KEY-ID>",
-			rpc.Credentials{
-				Type: rpc.CredentialsTypeAPIKey,
-				// Replace "<API-KEY>" (including brackets) with your machine's API key
-				Payload: "<API-KEY>",
-			})),
 package main
 
 import (
