@@ -6,17 +6,15 @@ from viam.components.board import Board
 
 
 async def connect():
-    ADDRESS_SECRET = "[ADD YOUR ROBOT ADDRESS HERE. YOU CAN FIND THIS ON THE CONNECT TAB OF THE VIAM APP]"
-    PAYLOAD_SECRET = "[PLEASE ADD YOUR SECRET HERE. YOU CAN FIND THIS ON THE CONNECT TAB OF THE VIAM APP]"
-    creds = Credentials(
-        type='robot-location-secret',
-        payload=PAYLOAD_SECRET)
-    opts = RobotClient.Options(
-        refresh_interval=0,
-        dial_options=DialOptions(credentials=creds)
-    )
-    return await RobotClient.at_address(ADDRESS_SECRET, opts)
-
+    async def connect():
+        opts = RobotClient.Options.with_api_key(
+            # Replace "<API-KEY>" (including brackets) with your machine's API key
+            api_key='<API-KEY>',
+            # Replace "<API-KEY-ID>" (including brackets) with your machine's
+            # API key ID
+            api_key_id='<API-KEY-ID>'
+        )
+        return await RobotClient.at_address("ADDRESS FROM THE VIAM APP", opts)
 
 async def main():
     robot = await connect()
