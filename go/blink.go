@@ -18,10 +18,14 @@ func main() {
       context.Background(),
       "[ADD YOUR ROBOT ADDRESS HERE. YOU CAN FIND THIS ON THE CONNECT TAB OF THE VIAM APP]",
       logger,
-      client.WithDialOptions(rpc.WithCredentials(rpc.Credentials{
-          Type:    utils.CredentialsTypeRobotLocationSecret,
-          Payload: "[PLEASE ADD YOUR SECRET HERE. YOU CAN FIND THIS ON THE CONNECT TAB OF THE VIAM APP]",
-      })),
+      client.WithDialOptions(rpc.WithEntityCredentials(
+	// Replace "<API-KEY-ID>" (including brackets) with your machine's API key ID
+	"<API-KEY-ID>",
+	rpc.Credentials{
+	  Type: rpc.CredentialsTypeAPIKey,
+	  // Replace "<API-KEY>" (including brackets) with your machine's API key
+	  Payload: "<API-KEY>",
+	})),
   )
   if err != nil {
       logger.Fatal(err)
