@@ -6,15 +6,14 @@ from viam.components.board import Board
 
 
 async def connect():
-    async def connect():
-        opts = RobotClient.Options.with_api_key(
-            # Replace "<API-KEY>" (including brackets) with your machine's API key
-            api_key='<API-KEY>',
-            # Replace "<API-KEY-ID>" (including brackets) with your machine's
-            # API key ID
-            api_key_id='<API-KEY-ID>'
-        )
-        return await RobotClient.at_address("ADDRESS FROM THE VIAM APP", opts)
+    opts = RobotClient.Options.with_api_key(
+        # Replace "<API-KEY>" (including brackets) with your machine's API key
+        api_key='<API-KEY>',
+        # Replace "<API-KEY-ID>" (including brackets) with your machine's
+        # API key ID
+        api_key_id='<API-KEY-ID>'
+    )
+    return await RobotClient.at_address("ADDRESS FROM THE VIAM APP", opts)
 
 async def main():
     robot = await connect()
